@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <BottomNavigation className={classes.root} style={{ justifyContent: "flex-start"}}>
       <GitHub  className={classes.root} onClick={() => window.open('https://github.com/annafatsevych', '_blank')} />
-      <LinkedIn className={classes.root} />
+      <LinkedIn className={classes.root} onClick={() => window.open('https://www.linkedin.com/in/anna-fatsevych-2096a664/', '_blank')} />
     </BottomNavigation>
   );
 };
