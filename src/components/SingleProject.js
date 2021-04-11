@@ -6,11 +6,6 @@ import { projects } from "./projects";
 
 import "../Gallery.css";
 
-
-
-
-
-
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -60,40 +55,41 @@ export const SingleProject = ({ match }) => {
     
 
       <motion.div variants={imageVariants}>
-
-      <Grid   container
-  spacing={0}
-  xs={8}
-  direction="column"
-  alignItems="center"
-  justify="center" >
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="200"
-                  image={projects[id -1].image}
-                />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {projects[id-1].name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {projects[id-1].description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
+        <Grid
+          container
+          spacing={0}
+          xs={8}
+          direction="column"
+          alignItems="center"
+          justify="center" 
+        >
+          <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Project 1"
+                    height="200"
+                    image={projects[id -1].image}
+                  />
+                  <CardContent>
+                    <Typography variant="h5" gutterBottom>
+                      {projects[id-1].name}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      {projects[id-1].description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" color="primary">
+                    Share
+                  </Button>
+                  <Button size="small" color="primary">
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+        </Grid>
 
     </motion.div>
     <motion.div className="back" variants={backVariants}>

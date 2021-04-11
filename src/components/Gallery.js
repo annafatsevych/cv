@@ -18,11 +18,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/portal.png";
-import project2 from "../images/fn.png";
-import project3 from "../images/usability.png";
-import project4 from "../images/imagehash.png";
-
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
@@ -75,25 +70,6 @@ const Thumbnail = ({ id, i , image}) => (
     </motion.div>
   </motion.div>
 );
-
-// export const Gallery = () => (
-//   <>
-//     <h1>WORK</h1>
-//     <div className="gallery">
-//       <motion.div
-//         className="thumbnails"
-//         initial="initial"
-//         animate="enter"
-//         exit="exit"
-//         variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-//       >
-//         {images.map((id, i) => (
-//           <Thumbnail style={{ width: "400px"}} key={id} id={id} i={i} />
-//         ))}
-//       </motion.div>
-//     </div>
-//   </>
-// );
 
 
 

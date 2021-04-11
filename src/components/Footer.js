@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Facebook from "@material-ui/icons/Facebook";
-import Twitter from "@material-ui/icons/Twitter";
+
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import GitHub from "@material-ui/icons/GitHub";
+import Send from "@material-ui/icons/Send";
+
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -32,6 +32,8 @@ const Footer = () => {
     <BottomNavigation className={classes.root} style={{ justifyContent: "flex-start"}}>
       <GitHub  className={classes.root} onClick={() => window.open('https://github.com/annafatsevych', '_blank')} />
       <LinkedIn className={classes.root} onClick={() => window.open('https://www.linkedin.com/in/anna-fatsevych-2096a664/', '_blank')} />
+      <Send className={classes.root} onClick={() => window.open('mailto:anna.fatsevych@gmail.com', 'blank')} />
+
     </BottomNavigation>
   );
 };

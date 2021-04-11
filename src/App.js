@@ -37,15 +37,12 @@ import {
 import Home from "./components";
 import Navbar from "./components/Navbar";
 import Resume from "./components/Resume"
-import Footer from "./components/Footer"
-import Portfolio from "./components/Portfolio";
 import Gallery from "./components/Gallery";
 import { SingleProject } from './components/SingleProject';
 
-
 export default function App() {
   return (
-    <Router>
+    <Router >
       <Navbar />
       <div>
         <Switch>

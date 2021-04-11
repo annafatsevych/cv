@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/fn.png";
+import avatar from "../images/avatar.png";
 
 import Footer from "./Footer";
 
@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
     margin: theme.spacing(1),
+    background: "white",
   },
   title: {
     color: "steelblue",
@@ -58,9 +59,7 @@ const Header = () => {
       <Typography  className={classes.title} variant="h5">
           Software Developer
       </Typography>
-      {/* <Typography> */}
         <Footer />
-      {/* </Typography> */}
       </Grid>
 
       </Grid>
@@ -68,18 +67,7 @@ const Header = () => {
       </Typography>
 
 
-      <Typography className={classes.subtitle} variant="h5">
-        {/* <Typed
-          strings={[
-            "Frontend Developer",
-            "Backend Developer",
-            "Native App Developer",
-          ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
-        /> */}
-      </Typography>
+
     </Box>
   );
 };
