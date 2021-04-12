@@ -47,7 +47,7 @@ import { SingleProject } from './components/SingleProject';
 export default function App() {
   return (
     <Theme >
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <div>
         <Switch>
