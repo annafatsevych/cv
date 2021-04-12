@@ -12,8 +12,8 @@ import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
     margin: theme.spacing(1),
     background: "white",
   },

@@ -34,14 +34,19 @@ import {
   Link
 } from "react-router-dom";
 
+import Theme from "./theme";
+
+
 import Home from "./components";
 import Navbar from "./components/Navbar";
 import Resume from "./components/Resume"
 import Gallery from "./components/Gallery";
+import Portfolio from "./components/Portfolio";
 import { SingleProject } from './components/SingleProject';
 
 export default function App() {
   return (
+    <Theme >
     <Router >
       <Navbar />
       <div>
@@ -50,12 +55,14 @@ export default function App() {
             <Resume />
           </Route>
           <Route path="/portfolio">
-            <Gallery />
+            <Portfolio />
           </Route>
           <Route path="/gallery">
             <Gallery />
           </Route>
           <Route path="/image/:id" component={SingleProject} />
+          <Route path="/test" component={Gallery} />
+
           <Route path="/">
             <Home />
           </Route>
@@ -64,5 +71,6 @@ export default function App() {
       </div>
       {/* <Footer /> */}
     </Router>
+    </Theme>
   );
 }

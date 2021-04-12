@@ -12,6 +12,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "white",
+    marginTop: "44px",
   },
   timeLine: {
     position: "relative",

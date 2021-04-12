@@ -60,7 +60,6 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      {/* <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" /> */}
       <Divider />
       <List>
         {menuItems.map((item, i) => (
@@ -85,7 +84,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <Box component="nav">
-        <AppBar position="sticky" className={classes.appbar}>
+        <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
               <Menu className={classes.arrow} />

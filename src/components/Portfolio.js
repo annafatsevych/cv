@@ -2,101 +2,82 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Avatar from "@material-ui/core/Avatar";
 
-import project1 from "../images/portal.png";
-import project2 from "../images/fn.png";
-import project3 from "../images/usability.png";
-import project4 from "../images/imagehash.png";
-
+import { projects } from "./projects";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "lightsteelblue",
+    background: "white",
     height: "100%",
+    padding: " 0 3rem"
+  },
+  avatar: {
+    width: theme.spacing(35),
+    height: theme.spacing(35),
+    margin: theme.spacing(1),
+    background: "white",
+    boxShadow: theme.shadows[5],
   },
   cardContainer: {
     maxWidth: 600,
     margin: "2rem auto",
   },
+  heading: {
+    color: "steelblue",
+    padding: "3rem 0",
+    textTransform: "uppercase",
+    marginTop: "44px",
+  },
+  reverse: {
+    flexFlow: "row-reverse",
+    flexWrap: "wrap",
+    margin: "1.5rem 0"
+  },
+  wrap: {
+    flexWrap: "wrap",
+    margin: "1.5rem 0",
+  },
+  title: {
+    padding: "1rem 0"
+  }
+
 }));
-
-const projects = [
-  {
-    name: "Customer Portal",
-    description: `A ReactJS Application that uses internal API, as well as FusionAuth 
-      for authentication, and displays viable information as well as manages configurations. CRUD`,
-    image: project1,
-  },
-  {
-    name: "FlightNetwork.com",
-    description: `Responsive website written in ReactJS with NodeJS that utilizes AB testing with Optimizely, Lokalise for language support.`,
-    image: project2,
-  },
-  {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project3,
-  },
-  {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project4,
-  },
-
-];
 
 const Portfolio = () => {
   const classes = useStyles();
-  return (
-    <Box component="div" className={classes.mainContainer}>
-      <Grid container justify="center">
-        {/* Projects */}
 
-        {console.log("HERE")}
-        {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={6} key={i}>
-            <Card className={classes.cardContainer}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="140"
-                  image={project.image}
-                />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
-            </Card>
+  const renderImageCard = (project) => (
+    <div style={{display: "flex", justifyContent: "center"}}>
+      <Avatar className={classes.avatar} src={project.image} alt="Meee" />
+    </div>
+  )
+
+  return (
+    <Box component="header" className={classes.mainContainer}>
+      <Typography variant="h4" align="center" className={classes.heading}>
+        Projects
+      </Typography>
+      {projects.map((project, i) => (
+        <Grid container justify="center" alignItems="center" className={i%2 == 0 ? classes.wrap : classes.reverse}>
+          <Grid item xs={12} sm={12} md={6} key={i} >
+            {renderImageCard(project)}
           </Grid>
-        ))}
-      </Grid>
+          <Grid item xs={12} sm={12} md={6} key={i}>
+            <Typography variant="h4" align="center" color="primary" className={classes.title}>
+              {project.name}
+            </Typography>
+            <Typography color="textPrimary" variant="body1" align="center" className={classes.test} >
+              {project.description}
+            </Typography>
+
+            <Typography color="secondary" variant="h5" align="center" className={classes.title} >
+              {project.techStack}
+            </Typography>
+          </Grid>
+        </Grid>      
+      ))}
     </Box>
   );
 };
