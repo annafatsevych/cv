@@ -4,6 +4,8 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
+import Divider from "@material-ui/core/Divider";
+
 
 import { projects } from "./projects";
 
@@ -33,14 +35,17 @@ const useStyles = makeStyles((theme) => ({
   reverse: {
     flexFlow: "row-reverse",
     flexWrap: "wrap",
-    margin: "1.5rem 0"
+    margin: "2rem 0"
   },
   wrap: {
     flexWrap: "wrap",
-    margin: "1.5rem 0",
+    margin: "2rem 0",
   },
   title: {
     padding: "1rem 0"
+  },
+  divider: {
+    margin: "2rem 0"
   }
 
 }));
@@ -60,6 +65,7 @@ const Portfolio = () => {
         Projects
       </Typography>
       {projects.map((project, i) => (
+        <>
         <Grid container justify="center" alignItems="center" className={i%2 == 0 ? classes.wrap : classes.reverse}>
           <Grid item xs={12} sm={12} md={6} key={i} >
             {renderImageCard(project)}
@@ -76,7 +82,10 @@ const Portfolio = () => {
               {project.techStack}
             </Typography>
           </Grid>
-        </Grid>      
+        </Grid>  
+      <Divider className={classes.divider} />
+      </>
+    
       ))}
     </Box>
   );
