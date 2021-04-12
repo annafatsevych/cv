@@ -148,7 +148,7 @@ const Resume = () => {
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
+            color="textPrimary"
           >
             <List dense style={{ textAlign: "center"}}>
                 <ListItem>
@@ -189,9 +189,9 @@ const Resume = () => {
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
+            color="textPrimary"
           >
-            <List dense style={{ textAlign: "center"}}>
+            <List  color="textPrimary" dense style={{ textAlign: "center"}}>
               <ListItem>
                 <ListItemText style={{ textAlign: "center"}}
                   primary="Developed a website to perform an image search by hashing for Creative Commons Licensing"
@@ -230,7 +230,7 @@ const Resume = () => {
           <Typography
             variant="subtitle1"
             align="center"
-            className={classes.subtitle1}
+            color="textPrimary"
           >
           <List dense style={{ textAlign: "center"}}>
               <ListItem>

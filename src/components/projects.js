@@ -18,7 +18,7 @@ export const projects = [
     description: `Responsive website written in ReactJS that utilizes AB testing with Optimizely, Lokalise for language support.
       Quite a large code-base worked on many developers over a couple of years.\
       High traffic site that required optimized performance as well as
-      minimal down time. Worked with the UX team on completely redesigning the front.`,
+      minimal down time. Worked with the UX team on completely redesigning the front-end.`,
     image: project2,
     techStack: `ReactJS, Redux, SASS, CSS Modules, Webpack, Node`
 
@@ -30,6 +30,8 @@ export const projects = [
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project3,
+    techStack: `AngularJS, MongoB, NodeJS, Express`
+
   },
   {
     name: "Project 4",
@@ -38,6 +40,8 @@ export const projects = [
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project4,
+    techStack: `JavaScript, Python, PHP, C++`
+
   },
 
 ];
