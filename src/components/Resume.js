@@ -139,7 +139,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            React, Redux, C#
+            UX, React, Redux, C#
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             TripStack previously FlightNetwork          
@@ -190,10 +190,23 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <List dense style={{ textAlign: "center"}}>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Developed a website to perform an image search by hashing for Creative Commons Licensing"
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Worked in a small team of two developers and delivered the product"
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Used Flickr API as well as Python and PHP, with JavaScript front end and a C++ backend daemon"
+                />
+              </ListItem>
+            </List>
           </Typography>
         </Box>
         <Typography
@@ -208,7 +221,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            CSS, HTML, PHP
+            CSS, HTML, PHP, Adobe (PS, AI)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Delicious Scrap Shop          
@@ -218,10 +231,23 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+          <List dense style={{ textAlign: "center"}}>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Built (using open source PHP ZenCart) and Blogger an online graphic design business"
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Mainted a list of over 5,000 clients, using marketing tools as MailChimp and AdWords"
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText style={{ textAlign: "center"}}
+                  primary="Created e-commerce sites for clients"
+                />
+              </ListItem>
+            </List>
           </Typography>
         </Box>
         <Typography

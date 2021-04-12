@@ -15,9 +15,9 @@ const useStyles = makeStyles({
     padding: " 0.5rem",
     background: "transparent",
     "& .MuiSvgIcon-root": {
-      fill: "white",
+      fill: "darkseagreen",
       "&:hover": {
-        fill: "steelblue",
+        fill: "white",
         fontSize: "1.6rem",
         cursor: "pointer",
       },
