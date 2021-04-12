@@ -31,7 +31,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  HashRouter,
 } from "react-router-dom";
 
 import Theme from "./theme";
@@ -47,7 +48,7 @@ import { SingleProject } from './components/SingleProject';
 export default function App() {
   return (
     <Theme >
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL} >
       <Navbar />
       <div>
         <Switch>
@@ -70,7 +71,7 @@ export default function App() {
         </Switch>
       </div>
       {/* <Footer /> */}
-    </Router>
+    </HashRouter>
     </Theme>
   );
 }
