@@ -25,20 +25,14 @@ export const projects = [
   },
   {
     name: "Study Agenda",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `An web aapplication for students designed by studends that would aid in managing their time spent studying on particular assignments in a given course.  Capstone project at Seneca College that involved four developers and was built over a year time period.  Using Kanban, with tasks and respective board, along with best practices with Git (issues, pull requests and peer reviews), this project was completed and released on time and with quality.  It was showcased as top picks among peers as well as external sponsors.`,
     image: project3,
     techStack: `AngularJS, MongoB, NodeJS, Express`
 
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "pHash Image Search",
+    description: `Using pHash image hashing algorithm, a team of two developers (including myself) and the project lead designed and built a tool for uploading an image, then hashing it, and verifying against Creative Commons database if the image is licensed, and if licensed - under which license.`,
     image: project4,
     techStack: `JavaScript, Python, PHP, C++`
 
