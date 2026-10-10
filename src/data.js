@@ -20,7 +20,7 @@ export const experience = [
     year: "Present",
     role: "Full Stack Software Engineer",
     company: "TripStack (previously FlightNetwork)",
-    stack: "React, Redux, UX, .NET, C#, Go, Kubernetes",
+    stack: "React, Redux, UX, .NET, C#, Go, PostgreSQL, Redis, Kubernetes, Concourse",
     groups: [
       {
         heading: "Frontend & Project Ownership",
@@ -33,7 +33,8 @@ export const experience = [
       {
         heading: "Backend",
         points: [
-          "Developed backend services in .NET and C#, with some work in Go",
+          "Developed backend services in .NET and C#, with some work in Go, using PostgreSQL and Redis",
+          "Developed CI/CD pipelines with Concourse",
           "Helped migrate an application from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking",
         ],
       },
