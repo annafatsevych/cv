@@ -37,6 +37,7 @@ export const experience = [
           "Developed CI/CD pipelines with Concourse",
           "Worked with metrics and monitoring using Prometheus, Grafana, Elasticsearch, Kibana and OpenSearch, with Kafka and Druid for event streaming and analytics",
           "Helped migrate an application from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking, reducing GCP costs and maintenance overhead, making deployments more reliable and halving production release time from 40 to 20 minutes",
+          "Set up a testing environment on the staging Kubernetes cluster",
         ],
       },
     ],
