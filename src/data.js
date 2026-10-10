@@ -35,6 +35,7 @@ export const experience = [
         points: [
           "Developed backend services in .NET and C#, with some work in Go, using PostgreSQL and Redis",
           "Developed CI/CD pipelines with Concourse",
+          "Worked with metrics and monitoring using Prometheus, Grafana, Elasticsearch, Kibana and OpenSearch, with Kafka and Druid for event streaming and analytics",
           "Helped migrate an application from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking",
         ],
       },
