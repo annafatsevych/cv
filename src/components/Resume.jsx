@@ -1,4 +1,4 @@
-import { experience, timelineStart } from "../data";
+import { experience } from "../data";
 
 const Points = ({ points }) => (
   <ul>
@@ -32,9 +32,6 @@ export default function Resume() {
             </article>
           </li>
         ))}
-        <li className="timeline-entry">
-          <span className="timeline-year">{timelineStart}</span>
-        </li>
       </ol>
     </section>
   );

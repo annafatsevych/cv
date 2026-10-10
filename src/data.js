@@ -56,7 +56,7 @@ export const experience = [
     ],
   },
   {
-    year: "2015",
+    year: "2011",
     company: "Delicious Scrap Shop",
     stack: "CSS, HTML, PHP, Adobe (PS, AI)",
     points: [
@@ -67,7 +67,6 @@ export const experience = [
   },
 ];
 
-export const timelineStart = "2007";
 
 export const projects = [
   {
