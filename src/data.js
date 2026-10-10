@@ -40,6 +40,7 @@ export const experience = [
           "Enabled continuous releases, made deployments more reliable and halved production release time from 40 to 20 minutes",
           "Achieved a 35x reduction in instances (VMs to active pods) and cut storage from 246 GB to 16 GB, lowering GCP costs and maintenance overhead",
           "Set up a testing environment on the staging Kubernetes cluster",
+          "Mentored new engineers on code quality and best practices",
         ],
       },
     ],
