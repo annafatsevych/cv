@@ -5,7 +5,7 @@ import imageHash from "./images/imagehash.png";
 
 export const profile = {
   name: "Anna Fatsevych",
-  title: "Software Developer",
+  title: "Software Engineer",
   links: {
     github: "https://github.com/annafatsevych",
     linkedin: "https://www.linkedin.com/in/anna-fatsevych-2096a664/",
