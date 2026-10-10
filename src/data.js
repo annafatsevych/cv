@@ -36,7 +36,7 @@ export const experience = [
           "Developed backend services in .NET and C#, with some work in Go, using PostgreSQL and Redis",
           "Developed CI/CD pipelines with Concourse",
           "Worked with metrics and monitoring using Prometheus, Grafana, Elasticsearch, Kibana and OpenSearch, with Kafka and Druid for event streaming and analytics",
-          "Helped migrate a production application serving ~430 requests per second from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking",
+          "Led the migration of a production application serving ~430 requests per second from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking",
           "Enabled continuous releases, made deployments more reliable and halved production release time from 40 to 20 minutes",
           "Achieved a 35x reduction in instances (VMs to active pods) and cut storage from 246 GB to 16 GB, lowering GCP costs and maintenance overhead",
           "Set up a testing environment on the staging Kubernetes cluster",
