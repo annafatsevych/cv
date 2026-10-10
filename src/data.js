@@ -14,15 +14,29 @@ export const profile = {
 };
 
 // Newest first. `year` is the label shown on the timeline above the entry.
+// An entry has either `points`, or `groups` of points under sub-headings.
 export const experience = [
   {
     year: "Present",
+    role: "Full Stack Software Engineer",
     company: "TripStack (previously FlightNetwork)",
-    stack: "UX, React, Redux, C#",
-    points: [
-      "Delivered many successful features in an agile, fast-paced environment",
-      "Took on main projects from the kick-off meeting through to delivery and release",
-      "Took ownership of seeking out and implementing new technologies; held Scrum ceremonies and stakeholder meetings",
+    stack: "React, Redux, UX, .NET, C#, Go, Kubernetes",
+    groups: [
+      {
+        heading: "Frontend & Project Ownership",
+        points: [
+          "Delivered many successful features in an agile, fast-paced environment",
+          "Took on main projects from the kick-off meeting through to delivery and release",
+          "Took ownership of seeking out and implementing new technologies; held Scrum ceremonies and stakeholder meetings",
+        ],
+      },
+      {
+        heading: "Backend",
+        points: [
+          "Developed backend services in .NET and C#, with some work in Go",
+          "Helped migrate an application from VMs on Google Cloud Platform to Kubernetes on OpenStack, using Cilium for networking",
+        ],
+      },
     ],
   },
   {

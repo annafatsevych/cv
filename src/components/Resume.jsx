@@ -1,5 +1,13 @@
 import { experience, timelineStart } from "../data";
 
+const Points = ({ points }) => (
+  <ul>
+    {points.map((point) => (
+      <li key={point}>{point}</li>
+    ))}
+  </ul>
+);
+
 export default function Resume() {
   return (
     <section id="resume" className="section">
@@ -9,13 +17,18 @@ export default function Resume() {
           <li key={job.company} className="timeline-entry">
             <span className="timeline-year">{job.year}</span>
             <article className="card">
+              {job.role && <p className="role">{job.role}</p>}
               <h3>{job.company}</h3>
               <p className="stack">{job.stack}</p>
-              <ul>
-                {job.points.map((point) => (
-                  <li key={point}>{point}</li>
+              {job.points && <Points points={job.points} />}
+              {job.groups
+                ?.filter((group) => group.points.length > 0)
+                .map((group) => (
+                  <div key={group.heading} className="group">
+                    <h4>{group.heading}</h4>
+                    <Points points={group.points} />
+                  </div>
                 ))}
-              </ul>
             </article>
           </li>
         ))}

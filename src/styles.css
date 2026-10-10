@@ -271,6 +271,30 @@ a {
   margin-top: 0.35rem;
 }
 
+.role {
+  margin: 0 0 0.2rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.group {
+  margin-top: 1.1rem;
+}
+
+.group h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline .group ul {
+  margin-top: 0.4rem;
+}
+
 /* ---------- Projects ---------- */
 
 .projects {
