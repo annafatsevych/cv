@@ -46,7 +46,7 @@ export const experience = [
     ],
   },
   {
-    year: "2017",
+    year: "2015–2016",
     company: "Centre for Development of Open Technology at Seneca",
     stack: "JavaScript, Python, C++",
     points: [
@@ -56,7 +56,7 @@ export const experience = [
     ],
   },
   {
-    year: "2011",
+    year: "2009–2017",
     company: "Delicious Scrap Shop",
     stack: "CSS, HTML, PHP, Adobe (PS, AI)",
     points: [
